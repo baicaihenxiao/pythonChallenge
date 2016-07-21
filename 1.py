@@ -21,3 +21,4 @@ for c in url:
 		print(c, end='')
 		
 #the result is to replace map with ocr in the URL.
+#the next level website: http://www.pythonchallenge.com/pc/def/orc.html
