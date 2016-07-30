@@ -1,5 +1,5 @@
 #2016-7-23 00:14:42
-#http://www.pythonchallenge.com/pc/def/ocr.html
+#level 2: http://www.pythonchallenge.com/pc/def/ocr.html
 
 
 

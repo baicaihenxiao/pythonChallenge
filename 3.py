@@ -1,5 +1,5 @@
 #2016-7-30 00:27:31
-#http://www.pythonchallenge.com/pc/def/equality.html
+#level 3: http://www.pythonchallenge.com/pc/def/equality.html
 
 import re
 

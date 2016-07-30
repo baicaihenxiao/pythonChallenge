@@ -1,5 +1,5 @@
 #2016-7-20 13:20:12
-#http://www.pythonchallenge.com/pc/def/map.html
+#level 1: http://www.pythonchallenge.com/pc/def/map.html
 
 
 from __future__ import print_function# this line is to use print(c, end = ''), which doesn't output new line;
