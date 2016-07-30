@@ -1254,40 +1254,30 @@ dCdFLtBQPtFQuCdKOrpndJNUFQIDSbetUKylhSUjcDVtbiQrWMRQhAwGUZyPneCGUjGBBTkLqxLAXXtB
 KfErkDaWMFZZeuqDmXKJEGHyToPUhPphfVhgUZgbIuRAtWnroImpJKqqmEZqeNQCKzhjIkKQHURWLXFw
 PBuijeoTSpsVLaOGuLVjMZXkBvVXwUuHfBihziiavGSYofPNeKsTXruMUumRRPQJzvSzJkKbtSipiqBd
 """
-tmp = re.findall(r'[^A-Z]+[A-Z]{3}[a-z]{1}[A-Z]{3}[^A-Z]+', plaintext)
+#tmp = re.findall(r'[^A-Z]+[A-Z]{3}([a-z]{1})[A-Z]{3}[^A-Z]+', plaintext)
 
-ch = "-".join()
+p = re.compile(r'[^A-Z]+[A-Z]{3}([a-z]{1})[A-Z]{3}[^A-Z]+')
+rep = p.finditer(plaintext)
 
-#ch = list(set(plaintext))
+for iter in rep:
+	print(iter.group(1))
 
-print(ch)
 
 '''
-for c in ch:
-	print(c)
-	print(plaintext.count(c))
-'''	
-'''
-a
-1
-e
-1
-i
-1
 l
-1
-q
-1
-u
-1
+i
+n
+k
+e
+d
+l
+i
+s
 t
-1
-y
-1
 
-aeilquty
-equality
+linkedlist
 
+type the URL:http://www.pythonchallenge.com/pc/def/linkedlist.html 
 
-the next level is: http://www.pythonchallenge.com/pc/def/equality.html 
+the next level is: http://www.pythonchallenge.com/pc/def/linkedlist.php
 '''
