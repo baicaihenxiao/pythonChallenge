@@ -6,11 +6,19 @@
 题目网站: http://www.pythonchallenge.com/
 
 level 1: http://www.pythonchallenge.com/pc/def/map.html <br/>
+	how to replace character in string.
 level 2: http://www.pythonchallenge.com/pc/def/ocr.html <br/>
-level 3: http://www.pythonchallenge.com/pc/def/equality.html <br/>
-level 4: http://www.pythonchallenge.com/pc/def/linkedlist.php <br/>
-level 5: http://www.pythonchallenge.com/pc/def/peak.html <br/>
-level 6: http://www.pythonchallenge.com/pc/def/channel.html <br/>
+	how to handle string and set.
+###level 3: http://www.pythonchallenge.com/pc/def/equality.html <br/>
+	how to use re module to search string.
+###level 4: http://www.pythonchallenge.com/pc/def/linkedlist.php <br/>
+	how to use urllib module to get webpage.
+###level 5: http://www.pythonchallenge.com/pc/def/peak.html <br/>
+	how to use pickle module to read structure data.
+###level 6: http://www.pythonchallenge.com/pc/def/channel.html <br/>
+	how to use zipfile module to read zip file.
+###level 7: http://www.pythonchallenge.com/pc/def/oxygen.html <br/>
+	
 
 
 
