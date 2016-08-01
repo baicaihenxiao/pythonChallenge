@@ -1233,7 +1233,7 @@ print(ch)
 for c in ch:
 	print(c)
 	print(plaintext.count(c))
-	
+
 '''
 a
 1
