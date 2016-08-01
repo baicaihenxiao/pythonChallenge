@@ -30,6 +30,8 @@ for i in range(0, 500): #the scope of for loop is defined by indent
 	print strPage1
 	res = re.search(r'[\d]+', strPage1) #regex expression to find number
 	print res.group(0) #number which has been found
+	#search() method return the first location that match the RegEx, group(0) return the string which regex matches
+	#if you want to use group(1), then you have to add () in regex, group(1) return the string which the first () in the regex matches
 	linkNum = re.compile("\d+")
 	tmpURL = re.sub(linkNum, res.group(0), tmpURL) #replace string: update new number in URL
 	#print tmpURL
