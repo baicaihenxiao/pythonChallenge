@@ -5,8 +5,8 @@ import urllib, re, pickle
 
 
 handle = urllib.urlopen("http://www.pythonchallenge.com/pc/def/banner.p")
-file = pickle.load(handle)
-for iter in file:
+data = pickle.load(handle)
+for iter in data:
 	for tup in iter:
 		print(tup[0] * tup[1], end='')
 	print('')
