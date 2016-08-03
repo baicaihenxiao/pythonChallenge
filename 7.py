@@ -1,15 +1,27 @@
 #2016-8-1 15:26:14
 #level 5: http://www.pythonchallenge.com/pc/def/peak.html
-from __future__ import print_function
-import urllib, re, pickle
+
+import urllib, re
+import matplotlib.pyplot as plt
+from PIL import Image
+from scipy import misc
 
 
-handle = urllib.urlopen("http://www.pythonchallenge.com/pc/def/banner.p")
-file = pickle.load(handle)
-for iter in file:
-	for tup in iter:
-		print(tup[0] * tup[1], end='')
-	print('')
+#handle = urllib.urlopen("http://www.pythonchallenge.com/pc/def/oxygen.png")
+#misc.imsave('oxygen.png', Image.open(handle)) 
+
+
+#Image.open('oxygen.png')
+#plt.imshow()
+#plt.show()
+
+
+i = Image.open("oxygen.png") # http://www.pythonchallenge.com/pc/def/oxygen.png
+row = [i.getpixel((x, 45)) for x in range(0, i.size[0], 7)]
+ords = [r for r, g, b, a in row if r == g == b]
+
+print "".join(map(chr, map(int, re.findall("\d+", "".join(map(chr, ords))))))
+
 
 '''
 another method:	

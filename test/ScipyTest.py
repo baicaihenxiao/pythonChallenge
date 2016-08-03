@@ -8,7 +8,7 @@ face = misc.imread('face.png')
 print type(face)
 print face.shape, face.dtype
 face.tofile('face.raw')
-face_from_raw = np.fromfile('face.raw', dtype=np.uint8)
+
 '''
 from PIL import Image
 im = Image.open('face.png')
