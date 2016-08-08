@@ -1,32 +1,47 @@
-#2016-8-1 15:26:14
-#level 5: http://www.pythonchallenge.com/pc/def/peak.html
+#2016-8-6 19:02:07
+#level 7: http://www.pythonchallenge.com/pc/def/oxygen.html
 
-import urllib, re
-import matplotlib.pyplot as plt
+
 from PIL import Image
-from scipy import misc
+import sys
 
 
-#handle = urllib.urlopen("http://www.pythonchallenge.com/pc/def/oxygen.png")
-#misc.imsave('oxygen.png', Image.open(handle)) 
-
-
-#Image.open('oxygen.png')
-#plt.imshow()
-#plt.show()
-
-
-i = Image.open("oxygen.png") # http://www.pythonchallenge.com/pc/def/oxygen.png
-row = [i.getpixel((x, 45)) for x in range(0, i.size[0], 7)]
-ords = [r for r, g, b, a in row if r == g == b]
-
-print "".join(map(chr, map(int, re.findall("\d+", "".join(map(chr, ords))))))
-
-
+im = Image.open("oxygen.png")
+#pixels = list(im.getdata())
+#print pixels
+print im.format, im.size, im.mode
 '''
-another method:	
-for iter in file:
-	print ''.join(elmt[0] * elmt[1] for elmt in iter)
-'''
-		
-#the next level website: http://www.pythonchallenge.com/pc/def/channel.html
+r = 0
+g = 0
+b = 0
+a = 0
+for i in range(0, 629):
+	r1, g1, b1 , a1= im.getpixel((i,47))
+	#print i, im.getpixel((i,47)), chr(r)
+	#print
+	if (r1 != r):
+		r = r1
+		sys.stdout.write(chr(r))
+'''	
+for i in range(0, 629, 7):
+	r, g, b , a= im.getpixel((i,47))
+	sys.stdout.write(chr(r))
+
+print 
+print chr(105)
+print chr(110)
+print chr(116)
+print chr(101)
+print chr(103)
+print chr(114)
+print chr(105)
+print chr(116)
+print chr(121)
+
+#1. download the oxygen.png, there are a strip of gray lattices in the middle, open the photo with windows Paint.
+#2. you can see that the x coodination of those gray lattices range from 0 to 629, the width of each lattice is 7 pixels, the height is 47(46£¬48 is only OK)
+#the answer is to get the RGB value of each lattices, because the lattices is gray level, so R=G=B. convert the R(or G, B) value to char and print them.
+#3. output: smart guy, you made it. the next level is [105, 110, 116, 101, 103, 114, 105, 116, 121]pe_
+#4. convert [105, 110, 116, 101, 103, 114, 105, 116, 121] to char again and you will get the answer "integrity"
+	
+#the next level website: http://www.pythonchallenge.com/pc/def/integrity.html

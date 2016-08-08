@@ -18,6 +18,8 @@
 ###level 6: http://www.pythonchallenge.com/pc/def/channel.html
 	how to use zipfile module to read zip file.
 ###level 7: http://www.pythonchallenge.com/pc/def/oxygen.html
+	how to use pil module to handle image
+###level 8: http://www.pythonchallenge.com/pc/def/integrity.html
 	
 
 
