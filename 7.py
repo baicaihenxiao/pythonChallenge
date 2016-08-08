@@ -39,7 +39,7 @@ print chr(116)
 print chr(121)
 
 #1. download the oxygen.png, there are a strip of gray lattices in the middle, open the photo with windows Paint.
-#2. you can see that the x coodination of those gray lattices range from 0 to 629, the width of each lattice is 7 pixels, the height is 47(46£¬48 is only OK)
+#2. you can see that the x coodination of those gray lattices range from 0 to 629, the width of each lattice is 7 pixels, the height is 47(46, 48 is only OK)
 #the answer is to get the RGB value of each lattices, because the lattices is gray level, so R=G=B. convert the R(or G, B) value to char and print them.
 #3. output: smart guy, you made it. the next level is [105, 110, 116, 101, 103, 114, 105, 116, 121]pe_
 #4. convert [105, 110, 116, 101, 103, 114, 105, 116, 121] to char again and you will get the answer "integrity"
