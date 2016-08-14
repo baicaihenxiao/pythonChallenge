@@ -12,5 +12,7 @@ print bz2.decompress('BZh91AY&SY\x94$|\x0e\x00\x00\x00\x81\x00\x03$ \x00!\x9ah3M
 # I really don't know the encoding scheme, so google to find answer.
 # So just use bz2 module to decompress...  and you find username and password
 # click the bee in the picture and redirect to another page to enter the credential.
+# username:huge
+# password:file
 
 #the next level website: http://www.pythonchallenge.com/pc/return/good.html
