@@ -23,6 +23,8 @@
 	how to use bz2 module to decompress data
 ###level 9: http://www.pythonchallenge.com/pc/return/good.html
 	username:huge password:file
+	hwo to use PIL ImageDraw to draw a photo
+###level 10: http://www.pythonchallenge.com/pc/return/bull.html
 	
 
 
