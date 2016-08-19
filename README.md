@@ -22,6 +22,7 @@
 ###level 8: http://www.pythonchallenge.com/pc/def/integrity.html
 	how to use bz2 module to decompress data
 ###level 9: http://www.pythonchallenge.com/pc/return/good.html
+	username:huge password:file
 	
 
 
