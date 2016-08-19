@@ -100,12 +100,16 @@ print good.mode, good.size
 new = Image.new(good.mode, good.size)
 draw = ImageDraw.Draw(new)
 draw.line([(0, 0), (100, 100)], fill = 128, width = 3)#useless, just to test the function
+'''
 draw.line(zip(first[0::2], first[1::2]), fill = 128, width = 3)
 draw.line(zip(second[0::2], second[1::2]), fill = 128, width = 3)
+'''
+draw.polygon(first, outline = 128, fill = 0)
+draw.polygon(second, outline = 128, fill = 0)
 new.show()
 
-#the image showed in the webpage doesn't give any help in solution, the answer is to use the list in source code to draw a image.
-#first = (x0, y0, x1, y1, x2, y2, ...), connect the dots (x0, y0) to (x1, y1) to (x2, y2) ...
-#output the photo, it's a bull
+#1. the image showed in the webpage doesn't give any help to solution, the answer is to use the list in source code to draw a image.
+#2. first = (x0, y0, x1, y1, x2, y2, ...), connect the dots (x0, y0) to (x1, y1) to (x2, y2) ...
+#3. output the photo, it's a bull
 
 #the next level website: http://www.pythonchallenge.com/pc/return/bull.html
