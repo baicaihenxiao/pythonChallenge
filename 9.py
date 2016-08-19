@@ -1,6 +1,9 @@
 #2016-8-8 22:38:28
 #level 9: http://www.pythonchallenge.com/pc/return/good.html
+#username:huge
+#password:file
 
+encode = 'utf-8'
 '''
 from PIL import Image
 
@@ -42,8 +45,9 @@ for i in range(7, 602):
 #print list1 + list2
 '''
 
+#refer to the link: http://garethrees.org/2007/05/07/python-challenge/
 
-from PIL import Image
+from PIL import Image, ImageDraw
 
 # Get this from the challenge page's HTML source:
 
@@ -91,18 +95,17 @@ second = (
     128, 156, 134, 157, 136, 156, 136
 )
 
-first, second = map(
-    lambda seq: [seq[i:i + 2] for i in range(0, len(seq), 2)],
-    (first, second)
-)
+good = Image.open("good.jpg")
+print good.mode, good.size
+new = Image.new(good.mode, good.size)
+draw = ImageDraw.Draw(new)
+draw.line([(0, 0), (100, 100)], fill = 128, width = 3)#useless, just to test the function
+draw.line(zip(first[0::2], first[1::2]), fill = 128, width = 3)
+draw.line(zip(second[0::2], second[1::2]), fill = 128, width = 3)
+new.show()
 
-i = Image.open("good.jpg") # http://www.pythonchallenge.com/pc/return/good.jpg
-new = Image.new(i.mode, i.size)
+#the image showed in the webpage doesn't give any help in solution, the answer is to use the list in source code to draw a image.
+#first = (x0, y0, x1, y1, x2, y2, ...), connect the dots (x0, y0) to (x1, y1) to (x2, y2) ...
+#output the photo, it's a bull
 
-for elt in (first, second):
-    for x, y in elt:
-        new.putpixel((x, y), (255, 255, 255))
-    
-new.save("new.jpg")
-
-#the next level website: http://www.pythonchallenge.com/pc/return/good.html
+#the next level website: http://www.pythonchallenge.com/pc/return/bull.html
