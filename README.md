@@ -1,7 +1,7 @@
 # pythonChallenge
 尝试着学python，解决pythonchallenge网站上的问题。
 
-网上的解题：http://holger.thoelking.name/python-challenge/all http://garethrees.org/2007/05/07/python-challenge/
+网上的解题：http://holger.thoelking.name/python-challenge/all
 
 题目网站: http://www.pythonchallenge.com/
 
@@ -27,6 +27,8 @@
 ###level 10: http://www.pythonchallenge.com/pc/return/bull.html
 	look and say sequence
 ###level 11: http://www.pythonchallenge.com/pc/return/5808.html
+	how to use PIL to handle particular pixel
+###level 12: http://www.pythonchallenge.com/pc/return/evil.html
 
 
 
