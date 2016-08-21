@@ -1,6 +1,7 @@
 #2016-8-19 15:45:12
 #level 10: http://www.pythonchallenge.com/pc/return/bull.html
 
+#username:huge password:file
 
 encode = 'utf-8'
 
