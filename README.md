@@ -6,7 +6,7 @@
 
 题目网站: http://www.pythonchallenge.com/
 
-###level 1: http://www.pythonchallenge.com/pc/def/map.html
+##level 1: http://www.pythonchallenge.com/pc/def/map.html
 	how to replace character in string.
 ###level 2: http://www.pythonchallenge.com/pc/def/ocr.html
 	how to handle string and set.
